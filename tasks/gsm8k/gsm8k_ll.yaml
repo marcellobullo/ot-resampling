@@ -1,0 +1,15 @@
+tag:
+- math_word_problems
+task: gsm8k_ll
+dataset_path: marcellobullo/ot-resampling-temp
+dataset_name: null
+output_type: loglikelihood
+validation_split: train
+test_split: null
+doc_to_text: '{{question}}'
+doc_to_target: '{{completion}}'
+target_delimiter: ''
+metric_list:
+- metric: acc
+  aggregation: mean
+  higher_is_better: true
