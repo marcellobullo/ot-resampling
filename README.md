@@ -1,5 +1,7 @@
 # Test-time Verification via Optimal Transport: Coverage, ROC, & Sub-optimality
 Official repository for "Test-time Verification via Optimal Transport: Coverage, ROC, &amp; Sub-optimality"
-
-
 <img src="intro_plot.png" width="1200"/>
+
+📎 **Abstract**: While test-time scaling with verification has shown promise in improving the performance of large language models (LLMs), role of the verifier and its imperfections remain underexplored. The effect of verification manifests through interactions of three quantities: (i) the generator’s *coverage*, (ii) the verifier’s *region of convergence* (ROC), and (iii) the sampling algorithm’s *sub-optimality*. Though recent studies capture subsets of these factors, a unified framework quantifying the geometry of their interplay is missing. We frame verifiable test-time scaling as a transport problem. This characterizes the interaction of coverage, ROC, and sub-optimality, and uncovers that the sub-optimality–coverage curve exhibits three regimes. A *transport regime* — where sub-optimality increases with coverage, a *policy improvement regime* — where sub-optimality may decrease with coverage, depending on the verifier’s ROC, and a *saturation regime* — where sub-optimality plateaus, unaffected by coverage. We further propose and analyse two classes of sampling algorithms — *sequential* and *batched* — and examine how their computational complexities shape these trade-offs. Empirical results with Qwen, Llama, and Gemma models corroborate our theoretical findings.
+
+---
