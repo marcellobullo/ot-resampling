@@ -187,5 +187,6 @@ if __name__ == "__main__":
 
     new_dir = os.path.join(ROOT, f"tasks/{task}/results-{sample_id}/suboptimality_vs_beta_threshold")
     os.makedirs(new_dir, exist_ok=True)
-    result_df_path = os.path.join(new_dir, f"{task}-{model_names_flat}-episodes{num_episodes}-i{sample_id}-th{threshold}.csv")
+    rounded_threshold = round(threshold, 4) if threshold is not None else "None"
+    result_df_path = os.path.join(new_dir, f"{task}-{model_names_flat}-episodes{num_episodes}-i{sample_id}-th{rounded_threshold}.csv")
     result_df.to_csv(result_df_path, index=False)
